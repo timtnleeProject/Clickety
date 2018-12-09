@@ -1,0 +1,4 @@
+# Clickety
+
+Make typewriter effects
+

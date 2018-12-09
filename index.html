@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="dist/clickety.css">
+    <script src="dist/clickety.min.js"></script>
+    <title>Document</title>
+    <style>
+        body {
+            padding: 30px;
+            font-style: italic;
+            background-color: #333333;
+            color: white;
+            font-size: 27px;
+        }
+        .code {
+            font-size: 12px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <button class="start" onclick="typing(event)">restart</button>
+    <div class="area"></div>
+    <div class="code">
+        <pre>
+        
+        const type = new Clickety('.area')
+        
+        typer
+          .init()
+          .type("Hello! ", 150)
+          .type("this is ", 100)
+          .type("clickety", 200)
+          .prev(7, 80)
+          .backspace(1, 100)
+          .type("C", 200)
+          .prev(9, 80)
+          .enter(100)
+          .end(500)
+          .type(".",80)
+          .enter(100)
+          .type("Let you make ", 80)
+          .type("COOL ", 300)
+          .type("typewriter ", 120)
+          .type("effects.", 80)
+          .enter(70)
+          .enter(100)
+          .type("If you", 80)
+          .pause(1000)
+          .backspace(6,70)
+          .type("Please star my " ,80)
+          .type("Github" ,120)
+          .type("if you like it ." ,80)
+          .pause(200)
+          .prev(16, 70)
+          .type(" ",80)
+          .pause(1000)
+          .next(16, 80)
+          .backspace(1, 100)
+          .type(" :) ",200)
+        </pre>
+    </div>
+    <script>
+
+        const typer = new Clickety(".area")
+
+        function typing(e) {
+            e.target.setAttribute("disabled",true)
+            typer
+                .init()
+                .type("Hello! ", 150)
+                .type("this is ", 100)
+                .type("clickety", 200)
+                .prev(7, 80)
+                .backspace(1, 100)
+                .type("C", 200)
+                .prev(9, 80)
+                .enter(100)
+                .end(500)
+                .type(".",80)
+                .enter(100)
+                .type("Let you make ", 80)
+                .type("COOL ", 300)
+                .type("typewriter ", 120)
+                .type("effects.", 80)
+                .enter(70)
+                .enter(100)
+                .type("If you", 80)
+                .pause(1000)
+                .backspace(6,70)
+                .type("Please star my " ,80)
+                .type("Github" ,120)
+                .type("if you like it ." ,80)
+                .pause(200)
+                .prev(16, 70)
+                .type(" ",80)
+                .pause(1000)
+                .next(16, 80)
+                .backspace(1, 100)
+                .type(" :) ",200)
+                .then(function(){
+                    e.target.removeAttribute("disabled")
+                })
+        }
+
+        document.querySelector('.start').click()
+
+    </script>
+</body>
+
+</html>

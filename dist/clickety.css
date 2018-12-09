@@ -1,0 +1,21 @@
+.clickety_text {
+    display: inline-block;
+    min-height: 1rem;
+}
+
+.clickety_cursor {
+    margin: 0 -0.5rem;
+    display: inline-block;
+    width: 1rem;
+    text-align: center;
+    animation: blink 1.2s infinite;
+}
+
+@keyframes blink {
+    0%,60% {
+        opacity: 1;
+    }
+    61%, 100% {
+        opacity: 0;
+    }
+}

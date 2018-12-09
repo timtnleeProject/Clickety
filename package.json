@@ -1,0 +1,34 @@
+{
+  "name": "clickety",
+  "version": "1.0.0",
+  "description": "typewriter effect",
+  "main": "clickety.js",
+  "devDependencies": {
+    "css-loader": "^2.0.0",
+    "mini-css-extract-plugin": "^0.5.0",
+    "webpack": "^4.27.1",
+    "webpack-cli": "^3.1.2"
+  },
+  "scripts": {
+    "build": "npm run build_script && npm run build_umd",
+    "build_script": "webpack --config build/script.js",
+    "build_umd": "webpack --config build/umd.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/timtnleeProject/Clickety.git"
+  },
+  "keywords": [
+    "clickety",
+    "typewritter",
+    "frontend",
+    "webpack"
+  ],
+  "author": "timtnlee",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/timtnleeProject/Clickety/issues"
+  },
+  "homepage": "https://github.com/timtnleeProject/Clickety#readme"
+}
