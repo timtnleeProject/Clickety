@@ -66,7 +66,7 @@ constructor(element, settings)
 |element|Set the container.|DOM Eelement||
 |settings.container_class|Set the class of the container.|String|`'clickety_container'`|
 |settings.line_class|Set the class of each line.|String|`'clickety_line'`|
-|settings.clickety_text|Set the class of each text block.|String|`'clickety_text'`|
+|settings.text_class|Set the class of each text block.|String|`'clickety_text'`|
 |settings.cursor_class|Set the class of the cursor.|String|`'clickety_cursor'`|
 |settings.cursor|Set the innerHTML of the cursor.|String|`'|'`|
 
@@ -78,7 +78,7 @@ All parameters about **time** are using milliseconds.
 
 |method|description|parameters|
 |-|-|-|
-|init|Initialize the typeing area, this must be called to init the container.|`init()`|
+|init|Initialize the typeing area, **this must be called to init the container**.|`init()`|
 |type|Type words.|`type(string, speed)`|
 |pause|pause|`pause(ms)`|
 |enter|Press enter.|`enter(delay)`|
@@ -94,7 +94,7 @@ All parameters about **time** are using milliseconds.
 
 Css file at `/dist/clickety.css`,
 
-or you can just copy below to your custom style sheets.
+or you can just copy belows to your custom style sheets.
 
 ```css
 .clickety_text {
