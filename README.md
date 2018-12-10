@@ -1,5 +1,7 @@
 # Clickety
 
+[![npm version](https://badge.fury.io/js/clickety.svg)](https://badge.fury.io/js/clickety)
+
 Make rich typewriter effects
 
 ## Demo
