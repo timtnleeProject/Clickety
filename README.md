@@ -55,6 +55,16 @@ typer
     .type(".",80)
 ```
 
+above is equivalent to
+
+```javascript
+typer.init()
+typer.type("Hello! ", 150)
+typer.type("this is ", 100)
+typer.type("clickety", 200)
+//....
+```
+
 ## Constructor
 
 ```javascript
@@ -70,7 +80,7 @@ constructor(element, settings)
 |settings.line_class|Set the class of each line.|String|`'clickety_line'`|
 |settings.text_class|Set the class of each text block.|String|`'clickety_text'`|
 |settings.cursor_class|Set the class of the cursor.|String|`'clickety_cursor'`|
-|settings.cursor|Set the innerHTML of the cursor.|String|`'|'`|
+|settings.cursor|Set the innerHTML of the cursor.|String|&#124;|
 
 ## Methods
 
